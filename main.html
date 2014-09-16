@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% autoescape true %}
+<html>
+  <body>
+    <h2>Hangman</h2> 
+
+    Welcome to Hangman, you have 8 chances to guess the hidden phrase. Good luck!<br/>
+
+    <br/>  
+
+    <form action = "/play" method = "post">
+      <div id ="play"><input type = "submit" value = "Play the game!"></div>
+    </form>
+  </body>
+</html>
+{% endautoescape %}

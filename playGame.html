@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% autoescape true %}
+<html>
+  <body>
+    <h1>Hangman</h1> 
+
+    Welcome to Hangman, you have 8 chances to guess the hidden phrase. Good luck!<br/>
+
+    <br/>  
+    <p>Please guess this word:</p>    
+    <p>{{blank}}</p>
+    
+    <form action="/play" method="post">
+    <h2>Please choose a letter:<h2>
+	<input type="text" name='letterGuess'>
+	<input type="submit" value="Submit">
+	<br/>
+    </form>
+
+ 
+
+
+  </body>
+</html>
+{% endautoescape %}
