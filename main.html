@@ -1,16 +1,45 @@
 <!DOCTYPE html>
 {% autoescape true %}
 <html>
+  <head>  
+    <title>Games by QUST IoT 2011 Team</title>
+    <meta name="viewport" content="width=device-width"/>
+
+    <link type="text/css" rel="stylesheet" href="./css/bootstrap.min.css">   
+    <link type="text/css" rel="stylesheet" href="./css/style.css">    
+  </head>
+
   <body>
-    <h2>Hangman</h2> 
+    <div class='wrapper container'>
 
-    Welcome to Hangman, you have 8 chances to guess the hidden phrase. Good luck!<br/>
+      <nav class="navbar navbar-default" role="navigation">
+        <h1>QUST IOT 2011 Team</h1>
+      </nav>
 
-    <br/>  
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="#hangman" data-toggle="tab">Hangman</a></li>
+        <li><a href="#battleship" data-toggle="tab">Battleship</a></li>          
+      </ul>
 
-    <form action = "/play" method = "post">
-      <div id ="play"><input type = "submit" value = "Play the game!"></div>
-    </form>
+   
+      <div class="tab-content">
+	<div class="tab-pane active" id="hangman">
+	  <p>Welcome to Hangman, you have 8 chances to guess the hidden phrase. Good luck!</p><br/><br/>  
+
+	  <form action = "/play" method = "post">
+	    <div id ="play"><input class="btn btn-primary" type = "submit" value = "Play the game!"></div>
+	  </form>
+	</div>
+
+	<div class="tab-pane" id="battleship">
+	  Welcome to Battleship.
+	</div>
+      </div>
+
+    </div><!-- /wrapper -->
+
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
   </body>
 </html>
 {% endautoescape %}

@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 {% autoescape true %}
 <html>
+  <head>  
+    <title>Games by QUST IoT 2011 Team</title>
+    <meta name="viewport" content="width=device-width"/>
+
+    <link type="text/css" rel="stylesheet" href="./css/bootstrap.min.css">   
+    <link type="text/css" rel="stylesheet" href="./css/style.css">    
+  </head>
   <body>
+    <div class="jumbotron">
     <h1>Hangman</h1> 
-
     Welcome to Hangman, you have 8 chances to guess the hidden phrase. Good luck!<br/>
+    </div>
 
-    <br/>  
-    <p>Please guess this word:</p>    
-    <p>{{blank}}</p>
-    
-    <form action="/play" method="post">
-    <h2>Please choose a letter:<h2>
-	<input type="text" name='letterGuess'>
-	<input type="submit" value="Submit">
-	<br/>
+    <div class="col-md-6">
+    <label>Please guess this word:</label>    
+    {{blank}}
+    </div>
+    <br/>
+    <br/>
+    <form action="/play" method="post" role="form">
+      <div class="form-group col-md-2">
+      <label>Please choose a letter to input:</label>
+	  <input type="text" class="form-control input-lg" placeholder="input a letter"name='letterGuess'>
+	  <input type="submit" class="btn btn-primary input-lg" value="Submit">
     </form>
-
- 
-
 
   </body>
 </html>

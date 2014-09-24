@@ -1,0 +1,25 @@
+body {
+    padding-top: 100px;
+}
+
+.navbar {
+    background-color: #242424;
+    background-image: none;
+    -webkit-box-shadow: inset 0px 0px 0px 1px rgba(255,255,255,0.2);
+    box-shadow: inset 0px 0px 0px 1px rgba(255,255,255,0.2);
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar h1 {
+    font-size: 20px;
+    line-height: 24px;
+    color: #CCC;
+    text-align: center;
+}
+
+.navbar h2 {
+    font-size: 16px;
+    line-height: 20px;
+    color: #999;
+}
